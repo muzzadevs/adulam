@@ -63,6 +63,7 @@ export default function RootLayout() {
       <head>
         <title>Adulam</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/iconAdulam.ico" />
       </head>
       <body>
         <ChakraProvider theme={theme}>
@@ -105,7 +106,7 @@ export default function RootLayout() {
                 <DrawerCloseButton />
                 <DrawerHeader fontFamily={theme.fonts.custom}>A D U L A M</DrawerHeader>
                 <DrawerBody>
-                <Sidebar onSelectBook={handleBookSelection} />
+                  <Sidebar onSelectBook={handleBookSelection} />
                 </DrawerBody>
               </DrawerContent>
             </Drawer>
@@ -122,7 +123,7 @@ export default function RootLayout() {
                 height="100vh"
                 display={{ base: "none", lg: "block" }}
               >
-               <Sidebar onSelectBook={handleBookSelection} />
+                <Sidebar onSelectBook={handleBookSelection} />
               </Box>
               {/* Contenido principal */}
               <Box flex="1" overflowY="auto" p={6}>
