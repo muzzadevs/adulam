@@ -45,6 +45,7 @@ export default function RootLayout() {
   const handleBookSelection = (book) => {
     setCurrentView("BookContent");
     setSelectedBook(book);
+    onClose(); // Cierra el Drawer al final
   };
 
   // Renderiza la vista actual
