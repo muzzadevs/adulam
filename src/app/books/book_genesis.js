@@ -1,13 +1,22 @@
 "use client";
-import { Box, Text, Heading, Divider, List, ListItem, VStack, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Heading,
+  Divider,
+  List,
+  ListItem,
+  VStack,
+  Link,
+} from "@chakra-ui/react";
 import { IoLink } from "react-icons/io5";
 
 export default function BookGenesis() {
   return (
-    <Box p={2} maxW={"1000px"}>
+    <Box p={4} maxW="1000px">
       {/* Título del libro */}
       <Heading as="h1" size="2xl" color="gray.800" mb={6}>
-        Génesis
+        Génesis: Un Análisis Académico
       </Heading>
 
       {/* Índice */}
@@ -16,222 +25,158 @@ export default function BookGenesis() {
           Índice
         </Heading>
         <VStack align="start" spacing={3}>
-          <Link href="#autor" color="blue.500">
+          <Link href="#introduccion" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Autor
+            Introducción
           </Link>
-          <Link href="#fecha" color="blue.500">
+          <Link href="#autor-fecha" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Fecha de Escritura
+            Autor y Fecha de Composición
           </Link>
-          <Link href="#lectores" color="blue.500">
+          <Link href="#estructura" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Lectores Originales
-          </Link>
-          <Link href="#contexto" color="blue.500">
-            <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Contexto Histórico
-          </Link>
-          <Link href="#capitulos" color="blue.500">
-            <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Número de Capítulos
-          </Link>
-          <Link href="#resumen" color="blue.500">
-            <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Resumen del Contenido
+            Estructura y Contenido
           </Link>
           <Link href="#temas" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Temas Principales
+            Temas Teológicos Principales
           </Link>
-          <Link href="#aplicacion" color="blue.500">
+          <Link href="#contexto" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Aplicación Práctica
+            Contexto Histórico y Cultural
           </Link>
-          <Link href="#retos" color="blue.500">
+          <Link href="#interpretaciones" color="blue.500">
             <IoLink style={{ display: "inline", marginRight: "8px" }} />
-            Retos del Libro
+            Interpretaciones y Debates Académicos
+          </Link>
+          <Link href="#conclusion" color="blue.500">
+            <IoLink style={{ display: "inline", marginRight: "8px" }} />
+            Conclusión
           </Link>
         </VStack>
       </Box>
 
       <Divider my={4} />
 
-      {/* Autor */}
-      <Heading as="h2" id="autor" size="lg" color="gray.700" mb={4}>
-        Autor
+      {/* Introducción */}
+      <Heading as="h2" id="introduccion" size="lg" color="gray.700" mb={4}>
+        Introducción
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis, al igual que los otros cuatro libros del Pentateuco, es atribuido tradicionalmente a Moisés.
-        Su autoría se sustenta en la tradición judeocristiana y en referencias posteriores en las Escrituras.
-        Es probable que Moisés recopilara fuentes orales y escritas bajo inspiración divina, estructurándolas para instruir al pueblo de Israel.
+        Génesis, el primer libro de la Biblia, establece los fundamentos para
+        la narrativa bíblica al abordar los orígenes del universo, la
+        humanidad y el pueblo de Israel. Su nombre proviene del griego
+        "génesis", que significa "origen" o "comienzo". Este libro presenta
+        las bases teológicas para entender la relación de Dios con su
+        creación y su plan redentor.
       </Text>
 
       <Divider my={4} />
 
-      {/* Fecha de Escritura */}
-      <Heading as="h2" id="fecha" size="lg" color="gray.700" mb={4}>
-        Fecha de Escritura
+      {/* Autor y Fecha de Composición */}
+      <Heading as="h2" id="autor-fecha" size="lg" color="gray.700" mb={4}>
+        Autor y Fecha de Composición
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Se estima que Génesis fue escrito entre el 1446 y el 1406 a.C., durante el período del éxodo y la peregrinación
-        del pueblo de Israel en el desierto. Esto explica su énfasis en establecer una identidad nacional y espiritual
-        basada en el pacto de Dios con los patriarcas.
+        Tradicionalmente, la autoría del Génesis se atribuye a Moisés, quien
+        habría escrito el Pentateuco, incluyendo Génesis, durante el siglo XV
+        a.C. Sin embargo, los estudios críticos modernos sugieren que el
+        texto podría ser una compilación de tradiciones orales y escritas,
+        recopiladas entre los siglos X y V a.C.
       </Text>
 
       <Divider my={4} />
 
-      {/* Lectores Originales */}
-      <Heading as="h2" id="lectores" size="lg" color="gray.700" mb={4}>
-        Lectores Originales
+      {/* Estructura y Contenido */}
+      <Heading as="h2" id="estructura" size="lg" color="gray.700" mb={4}>
+        Estructura y Contenido
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Los destinatarios iniciales fueron los israelitas liberados de Egipto. Génesis les proporcionó un marco histórico
-        y teológico para entender sus raíces y su relación especial con Dios. También buscaba fortalecer su fe en un Dios
-        soberano y único en un contexto cultural plagado de politeísmo.
-      </Text>
-
-      <Divider my={4} />
-
-      {/* Contexto Histórico */}
-      <Heading as="h2" id="contexto" size="lg" color="gray.700" mb={4}>
-        Contexto Histórico
-      </Heading>
-      <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis refleja un período histórico que abarca desde la creación del mundo hasta la migración de Jacob y su familia a Egipto.
-        Los relatos interactúan con las culturas vecinas de Oriente Próximo, como la babilónica y la egipcia, pero enfatizan la unicidad
-        de Dios frente a las múltiples divinidades de esas culturas.
-      </Text>
-
-      <Divider my={4} />
-
-      {/* Número de Capítulos */}
-      <Heading as="h2" id="capitulos" size="lg" color="gray.700" mb={4}>
-        Número de Capítulos
-      </Heading>
-      <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis consta de 50 capítulos divididos en dos secciones principales:
+        Génesis se divide en dos grandes secciones:
       </Text>
       <List spacing={3} mb={6}>
         <ListItem>
-          <strong>Capítulos 1-11:</strong> Relatos universales que incluyen la creación, el diluvio y la torre de Babel.
+          <strong>Capítulos 1-11:</strong> Narran eventos universales como la
+          creación, la caída del hombre, el diluvio y la torre de Babel.
         </ListItem>
         <ListItem>
-          <strong>Capítulos 12-50:</strong> Relatos patriarcales centrados en Abraham, Isaac, Jacob y José.
+          <strong>Capítulos 12-50:</strong> Se centran en los patriarcas:
+          Abraham, Isaac, Jacob y José, y el desarrollo del pueblo de Israel.
         </ListItem>
       </List>
 
       <Divider my={4} />
 
-      {/* Resumen del Contenido */}
-      <Heading as="h2" id="resumen" size="lg" color="gray.700" mb={4}>
-        Resumen del Contenido
-      </Heading>
-      <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis ofrece un marco para comprender los orígenes de la humanidad y la relación de Dios con su creación. El libro puede dividirse en:
-      </Text>
-      <List spacing={3} mb={6}>
-        <ListItem>
-          <strong>Capítulos 1-2:</strong> Relato de la creación, donde Dios ordena el caos y forma un mundo perfecto.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 3-5:</strong> La caída de Adán y Eva y las consecuencias del pecado.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 6-9:</strong> La corrupción humana y el juicio mediante el diluvio, seguido del pacto con Noé.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 10-11:</strong> La dispersión de las naciones tras la torre de Babel.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 12-25:</strong> Historia de Abraham, destacando el pacto y las promesas de Dios.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 26-36:</strong> Vida de Isaac y Jacob, y el conflicto entre Esaú y Jacob.
-        </ListItem>
-        <ListItem>
-          <strong>Capítulos 37-50:</strong> Historia de José, que resalta la providencia de Dios incluso en medio de las adversidades.
-        </ListItem>
-      </List>
-
-      <Divider my={4} />
-
-      {/* Temas Principales */}
+      {/* Temas Teológicos Principales */}
       <Heading as="h2" id="temas" size="lg" color="gray.700" mb={4}>
-        Temas Principales
+        Temas Teológicos Principales
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis aborda temas teológicos y existenciales fundamentales, como:
+        Génesis abarca una amplia gama de temas teológicos, incluyendo:
       </Text>
       <List spacing={3} mb={6}>
         <ListItem>
-          <strong>Creación:</strong> Dios como el creador soberano del universo.
+          <strong>Creación:</strong> Dios como el creador soberano del
+          universo, destacando el propósito y el diseño en su obra.
         </ListItem>
         <ListItem>
-          <strong>Pecado y Juicio:</strong> La desobediencia humana y sus consecuencias, pero también la misericordia de Dios.
+          <strong>Pecado y Caída:</strong> La desobediencia de Adán y Eva y
+          las consecuencias universales del pecado.
         </ListItem>
         <ListItem>
-          <strong>Pacto:</strong> Promesas de Dios a los patriarcas como base de su plan redentor.
+          <strong>Pacto:</strong> Las promesas de Dios a Abraham, estableciendo
+          el fundamento de su plan redentor para la humanidad.
         </ListItem>
         <ListItem>
-          <strong>Providencia:</strong> Dios obra incluso a través de las circunstancias más adversas para cumplir sus propósitos.
+          <strong>Providencia Divina:</strong> La mano de Dios guiando la
+          historia, incluso en medio de circunstancias adversas, como se ve en
+          la vida de José.
         </ListItem>
       </List>
 
       <Divider my={4} />
 
-      {/* Aplicación Práctica */}
-      <Heading as="h2" id="aplicacion" size="lg" color="gray.700" mb={4}>
-        Aplicación Práctica
+      {/* Contexto Histórico y Cultural */}
+      <Heading as="h2" id="contexto" size="lg" color="gray.700" mb={4}>
+        Contexto Histórico y Cultural
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Génesis nos invita a reflexionar sobre nuestra relación con Dios, el impacto del pecado y la esperanza en sus promesas.
-        Nos desafía a vivir en fe y obediencia, siguiendo el ejemplo de los patriarcas.
+        Génesis fue escrito en el contexto de las antiguas culturas del
+        Cercano Oriente, como las civilizaciones mesopotámicas y egipcias.
+        Estas culturas tenían narrativas míticas sobre los orígenes del mundo
+        y la humanidad, pero Génesis presenta una visión única de un Dios
+        soberano y personal.
       </Text>
 
       <Divider my={4} />
 
-      {/* Retos del Libro */}
-      <Heading as="h2" id="retos" size="lg" color="gray.700" mb={4}>
-        Retos del Libro
+      {/* Interpretaciones y Debates Académicos */}
+      <Heading as="h2" id="interpretaciones" size="lg" color="gray.700" mb={4}>
+        Interpretaciones y Debates Académicos
       </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        El estudio de Génesis presenta preguntas difíciles que invitan a una reflexión profunda. Entre los desafíos más comunes están:
+        Génesis ha sido objeto de diversas interpretaciones a lo largo de la
+        historia. Algunos interpretan la creación de manera literal, mientras
+        que otros adoptan enfoques simbólicos o poéticos. El relato del
+        diluvio, por ejemplo, genera debates sobre su alcance global o local.
+        Además, el pacto con Abraham es visto como central para la teología
+        bíblica y la narrativa de la redención.
       </Text>
-      <List spacing={3} mb={6}>
-        <ListItem>
-          <strong>La creación en seis días:</strong> ¿Cómo interpretar los "días" en el relato de la creación: literales o simbólicos?
-        </ListItem>
-        <ListItem>
-          <strong>La caída del hombre:</strong> ¿Cómo se relaciona el pecado original con la condición humana actual?
-        </ListItem>
-        <ListItem>
-          <strong>El diluvio universal:</strong> ¿Fue un evento global o localizado? ¿Qué implicaciones tiene para la interpretación
-          teológica y científica?
-        </ListItem>
-        <ListItem>
-          <strong>El pacto con Abraham:</strong> ¿Qué relevancia tiene este pacto para la teología del Nuevo Testamento y para los creyentes
-          actuales?
-        </ListItem>
-      </List>
+
+      <Divider my={4} />
+
+      {/* Conclusión */}
+      <Heading as="h2" id="conclusion" size="lg" color="gray.700" mb={4}>
+        Conclusión
+      </Heading>
       <Text fontSize="md" color="gray.600" mb={6}>
-        Para abordar estas preguntas, es útil emplear herramientas como:
+        Génesis no solo relata los orígenes del mundo y la humanidad, sino que
+        establece las bases teológicas para toda la narrativa bíblica. Su
+        mensaje trasciende las épocas, recordándonos la soberanía de Dios, la
+        seriedad del pecado y la esperanza en sus promesas. Este libro invita
+        a los lectores a reflexionar sobre su relación con el Creador y su
+        lugar en su plan eterno.
       </Text>
-      <List spacing={3} mb={6}>
-      <ListItem>
-          <strong>Oración y Reflexión:</strong> Buscar la guía del Espíritu Santo para aplicar las enseñanzas de Génesis a la vida diaria.
-        </ListItem>
-        <ListItem>
-          <strong>Comentarios Bíblicos:</strong> Consultar expositores respetados como Matthew Henry o comentaristas modernos.
-        </ListItem>
-        <ListItem>
-          <strong>Contexto Cultural:</strong> Examinar los antecedentes históricos y culturales del antiguo Oriente Próximo.
-        </ListItem>
-        <ListItem>
-          <strong>Estudio Comparativo:</strong> Analizar textos paralelos y referencias cruzadas dentro de la Biblia.
-        </ListItem>
-        
-      </List>
     </Box>
   );
 }

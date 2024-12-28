@@ -1,15 +1,15 @@
 "use client";
-import { Box, Text, Heading, VStack } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
 
 export default function Page() {
   return (
     <Box
       height="100%"
-      overflowY="auto" // Permite el scroll en el contenedor principal
+      overflowY="auto"
       p={6}
     >
-      {/* Encabezado */}
-      <Heading as="h1" size="xl" color="gray.800" mb={6}>
+        {/* Encabezado 1  */}
+        <Heading as="h1" size="xl" color="gray.800" mb={6}>
         Bienvenidos a la Cueva de Adulam
       </Heading>
       <Text fontSize="lg" color="gray.600" mb={8}>
@@ -28,128 +28,95 @@ export default function Page() {
         inductivo, una herramienta clave que te ayudará a descubrir por ti
         mismo las riquezas de la Escritura. Este método no solo te permitirá
         comprender el contexto histórico y cultural, sino que también te guiará
-        a aplicar sus enseñanzas en tu vida diaria. Sigue leyendo para conocer
-        más sobre este enfoque.
+        a aplicar sus enseñanzas en tu vida diaria. 
+      </Text>
+      {/* Encabezado 2  */}
+      <Heading as="h1" size="xl" color="gray.800" mb={6}>
+        Método Inductivo
+      </Heading>
+      <Text fontSize="lg" color="gray.600" mb={8}>
+        Este método consiste en tres pasos fundamentales: Observación, Interpretación y Aplicación. A continuación, encontrarás un tutorial detallado basado en Mateo 22:37-39, para aprender a implementarlo y descubrir las riquezas de la Palabra de Dios en profundidad.
       </Text>
 
-      {/* Tutorial: Método Inductivo */}
-      <Box bg="gray.50" borderRadius="lg" p={6} shadow="md">
+      {/* Introducción */}
+      <Box bg="gray.50" borderRadius="lg" p={6} shadow="md" mb={8}>
         <Heading as="h2" size="lg" color="gray.700" mb={4}>
-          Método de estudio bíblico inductivo
+          Introducción
         </Heading>
         <Text fontSize="md" color="gray.700" mb={4}>
-          El método inductivo es una herramienta rigurosa diseñada para examinar
-          las Escrituras en profundidad, permitiendo comprenderlas desde su
-          contexto original y aplicarlas de manera relevante en nuestra vida.
-          Este enfoque consta de tres etapas esenciales: Observación,
-          Interpretación y Aplicación.
+          Antes de comenzar, es crucial orar y pedir al Espíritu Santo que nos guíe en el estudio. La verdad de la Biblia no se consigue por nosotros mismos; es dada por Dios.
         </Text>
+      </Box>
 
-        <VStack align="start" spacing={6}>
-          {/* Observación */}
-          <Box>
-            <Heading as="h3" size="md" color="gray.800" mb={2}>
-              1. Observación: ¿Qué dice el texto?
-            </Heading>
-            <Text fontSize="md" color="gray.600" lineHeight="tall" mb={4}>
-              La observación es el proceso de examinar el texto para identificar
-              lo que está explícitamente escrito. Esto implica interrogar el
-              pasaje utilizando preguntas como:
-            </Text>
-            <VStack align="start" spacing={2} pl={4}>
-              <Text fontSize="md" color="gray.600">
-                - ¿Quiénes son los personajes principales?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Qué eventos o ideas se presentan?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Dónde y cuándo ocurre la acción?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Por qué se menciona este tema en este contexto?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Cómo interactúan los elementos del pasaje entre sí?
-              </Text>
-            </VStack>
-            <Text fontSize="md" color="gray.600" mt={4}>
-              Durante esta etapa, es útil identificar patrones, palabras clave,
-              términos repetidos y conectores lógicos. También se recomienda
-              usar herramientas como subrayado, diagramas y esquemas para
-              visualizar las relaciones entre los elementos del texto.
-            </Text>
-          </Box>
+      {/* Observación */}
+      <Box bg="gray.50" borderRadius="lg" p={6} shadow="md" mb={8}>
+        <Heading as="h2" size="lg" color="gray.700" mb={4}>
+          1. Observación: ¿Qué dice el texto?
+        </Heading>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          La observación es el primer paso del método inductivo. Nos lleva a examinar detenidamente el texto y descubrir sus detalles esenciales. Este paso incluye:
+        </Text>
+        <UnorderedList pl={6} mb={4}>
+          <ListItem fontSize="md" color="gray.600">Hacer preguntas clave: ¿Quién? ¿Qué? ¿Cuándo? ¿Dónde? ¿Por qué? ¿Cómo?</ListItem>
+          <ListItem fontSize="md" color="gray.600">Identificar palabras y frases clave que son esenciales para el mensaje del autor.</ListItem>
+          <ListItem fontSize="md" color="gray.600">Subrayar, marcar o usar símbolos para destacar patrones repetidos.</ListItem>
+          <ListItem fontSize="md" color="gray.600">Observar el contexto inmediato y general del pasaje.</ListItem>
+        </UnorderedList>
+        <Text fontWeight={"bold"} fontSize="md" color="gray.600" mb={4}>
+          Ejemplo práctico:
+        </Text>
+        <Text fontStyle={"italic"} fontSize="md" color="gray.600" mb={4}>
+          "Jesús dijo: ‘Amarás al Señor tu Dios con todo tu corazón, con toda tu alma y con toda tu mente’. Este es el primero y más grande mandamiento. Y el segundo es semejante: ‘Amarás a tu prójimo como a ti mismo’."
+        </Text>
+        <Text fontWeight={"bold"} fontStyle={"italic"} fontSize="md" color="gray.600" mb={4}>
+          Mateo 22:37-39
+        </Text>
+        <UnorderedList pl={6} mb={4}>
+          <ListItem fontSize="md" color="gray.600">"Jesús dijo": responde a la pregunta ¿Quién? (Jesús).</ListItem>
+          <ListItem fontSize="md" color="gray.600">"Amarás al Señor tu Dios": ¿Qué se manda hacer? (Amar a Dios).</ListItem>
+          <ListItem fontSize="md" color="gray.600">"Con todo tu corazón, alma y mente": ¿Cómo se debe amar? (Con todo el ser).</ListItem>
+          <ListItem fontSize="md" color="gray.600">"Este es el primero y más grande mandamiento": ¿Por qué es importante? (Es prioritario).</ListItem>
+        </UnorderedList>
+      </Box>
 
-          {/* Interpretación */}
-          <Box>
-            <Heading as="h3" size="md" color="gray.800" mb={2}>
-              2. Interpretación: ¿Qué significa el texto?
-            </Heading>
-            <Text fontSize="md" color="gray.600" lineHeight="tall" mb={4}>
-              La interpretación se centra en descubrir el mensaje original del
-              autor inspirado. Para ello, es necesario:
-            </Text>
-            <VStack align="start" spacing={2} pl={4}>
-              <Text fontSize="md" color="gray.600">
-                - Considerar el contexto histórico y cultural del pasaje.
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - Analizar el género literario (narrativa, poesía, profecía,
-                epístola, etc.).
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - Examinar el contexto inmediato y general de la Biblia.
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - Consultar herramientas exegéticas, como diccionarios bíblicos
-                y comentarios teológicos.
-              </Text>
-            </VStack>
-            <Text fontSize="md" color="gray.600" mt={4}>
-              Un ejemplo práctico podría ser el análisis de{" "}
-              <strong>Génesis 1</strong>, donde se observa la repetición de la
-              frase "Y vio Dios que era bueno". Esta frase no solo describe la
-              creación como buena, sino que también refleja el carácter perfecto
-              del Creador. Al interpretar este pasaje, es importante considerar
-              cómo esta descripción influye en nuestra comprensión de la
-              relación entre Dios y su creación.
-            </Text>
-          </Box>
+      {/* Interpretación */}
+      <Box bg="gray.50" borderRadius="lg" p={6} shadow="md" mb={8}>
+        <Heading as="h2" size="lg" color="gray.700" mb={4}>
+          2. Interpretación: ¿Qué quería decir el autor original a los lectores originales?
+        </Heading>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          La interpretación busca comprender el mensaje original que el autor inspirado quiso transmitir a los destinatarios originales. En este caso, Jesús respondía a una pregunta sobre el mandamiento más importante, destacando el amor a Dios y al prójimo como el fundamento de toda la Ley y los Profetas.
+        </Text>
+        <UnorderedList pl={6} mb={4}>
+          <ListItem fontSize="md" color="gray.600">Analiza el contexto cultural: ¿Qué significaba amar a Dios y al prójimo en la cultura judía del primer siglo?</ListItem>
+          <ListItem fontSize="md" color="gray.600">Identifica el género literario: Este pasaje es parte de un diálogo en los Evangelios.</ListItem>
+          <ListItem fontSize="md" color="gray.600">Considera el contexto general: ¿Cómo se relaciona este pasaje con otros textos sobre el amor en la Biblia?</ListItem>
+          <ListItem fontSize="md" color="gray.600">Estudia palabras clave en el idioma original: Por ejemplo, "amar" (ágape) implica amor sacrificial y desinteresado.</ListItem>
+        </UnorderedList>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          La interpretación correcta requiere tiempo y cuidado. Reflexiona sobre cómo este mandamiento resume toda la Ley y cómo los destinatarios originales habrían entendido este llamado radical al amor total.
+        </Text>
+      </Box>
 
-          {/* Aplicación */}
-          <Box>
-            <Heading as="h3" size="md" color="gray.800" mb={2}>
-              3. Aplicación: ¿Qué significa para mí?
-            </Heading>
-            <Text fontSize="md" color="gray.600" lineHeight="tall" mb={4}>
-              La aplicación es el paso en el que se conecta el mensaje del texto
-              con la vida diaria. Este proceso requiere reflexión personal y
-              sensibilidad al Espíritu Santo para identificar cómo las verdades
-              bíblicas pueden transformar actitudes, decisiones y
-              comportamientos.
-            </Text>
-            <VStack align="start" spacing={2} pl={4}>
-              <Text fontSize="md" color="gray.600">
-                - ¿Cómo cambia este texto mi perspectiva sobre Dios, el prójimo
-                o el mundo?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Qué acciones concretas debo tomar en respuesta al pasaje?
-              </Text>
-              <Text fontSize="md" color="gray.600">
-                - ¿Cómo puedo compartir esta enseñanza con otros de manera fiel
-                y edificante?
-              </Text>
-            </VStack>
-            <Text fontSize="md" color="gray.600" mt={4}>
-              Por ejemplo, al estudiar <strong>Juan 13:14-15</strong>, donde
-              Jesús lava los pies de sus discípulos, una aplicación podría ser
-              reflexionar sobre cómo adoptar una actitud de servicio humilde en
-              nuestras interacciones diarias.
-            </Text>
-          </Box>
-        </VStack>
+      {/* Aplicación */}
+      <Box bg="gray.50" borderRadius="lg" p={6} shadow="md">
+        <Heading as="h2" size="lg" color="gray.700" mb={4}>
+          3. Aplicación: ¿Qué me dice a mí el texto?
+        </Heading>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          En la aplicación, conectamos el mensaje del texto con nuestra vida diaria. Este paso requiere reflexión personal y sensibilidad al Espíritu Santo. Algunas preguntas que pueden guiar este proceso son:
+        </Text>
+        <UnorderedList pl={6} mb={4}>
+          <ListItem fontSize="md" color="gray.600">¿Cómo puedo amar más a Dios con todo mi ser en mis decisiones diarias?</ListItem>
+          <ListItem fontSize="md" color="gray.600">¿De qué manera puedo demostrar amor genuino y práctico hacia mi prójimo?</ListItem>
+          <ListItem fontSize="md" color="gray.600">¿Qué áreas de mi vida necesitan alinearse más con estos mandamientos?</ListItem>
+        </UnorderedList>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          Este texto nos invita a examinar nuestras prioridades y relaciones. Amar a Dios implica dedicarle tiempo, obedecer Su palabra y priorizar Su voluntad. Amar al prójimo se refleja en actos de servicio, compasión y justicia.
+        </Text>
+        <Text fontSize="md" color="gray.600" mb={4}>
+          Ejemplo práctico: Dedicar tiempo diario a la oración y la adoración para fortalecer nuestra relación con Dios. Además, buscar oportunidades concretas para ayudar a quienes están en necesidad, como participar en ministerios de servicio o apoyar a una familia en crisis.
+        </Text>
       </Box>
     </Box>
   );
